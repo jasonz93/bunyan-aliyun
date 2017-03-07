@@ -7,11 +7,11 @@ describe('Test bunyan aliyun', function () {
     it('Test log', function (done) {
         this.timeout(10000);
         let factory = new Factory({
-            accessKey: '',
-            secretKey: '',
-            endpoint: '',
-            projectName: '',
-            logStoreName: ''
+            accessKey: process.env.ALY_ACCESSKEY,
+            secretKey: process.env.ALY_SECRETKEY,
+            endpoint: 'cn-hangzhou.log.aliyuncs.com',
+            projectName: 'agarage',
+            logStoreName: 'test'
         });
         let logger = factory.createLogger('testlogger');
         logger.info('foo', 'bar');
