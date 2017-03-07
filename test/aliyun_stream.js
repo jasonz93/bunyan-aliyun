@@ -3,8 +3,8 @@
  */
 const Factory = require('../');
 
-describe('Test bunyan aliyun', function (done) {
-    it('Test log', () => {
+describe('Test bunyan aliyun', function () {
+    it('Test log', function (done) {
         this.timeout(10000);
         let factory = new Factory({
             accessKey: '',
