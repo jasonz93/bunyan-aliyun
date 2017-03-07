@@ -3,8 +3,9 @@
  */
 const Factory = require('../');
 
-describe('Test bunyan aliyun', () => {
+describe('Test bunyan aliyun', function (done) {
     it('Test log', () => {
+        this.timeout(10000);
         let factory = new Factory({
             accessKey: '',
             secretKey: '',
@@ -14,5 +15,6 @@ describe('Test bunyan aliyun', () => {
         });
         let logger = factory.createLogger('testlogger');
         logger.info('foo', 'bar');
+        setTimeout(done, 7000);
     })
 });
