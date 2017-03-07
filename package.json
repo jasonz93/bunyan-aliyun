@@ -1,6 +1,6 @@
 {
   "name": "bunyan-aliyun",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Adapt bunyan logger to Aliyun Log Service",
   "main": "lib/factory.js",
   "scripts": {
@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "aliyun-sdk": "^1.9.21",
+    "arguejs": "^0.2.3",
     "batch-executor": "1.0.x"
   }
 }

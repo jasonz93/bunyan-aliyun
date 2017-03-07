@@ -15,6 +15,8 @@ describe('Test bunyan aliyun', function () {
         });
         let logger = factory.createLogger('testlogger');
         logger.info('foo', 'bar');
-        setTimeout(done, 7000);
+        logger.on('report', (result) => {
+            done();
+        })
     })
 });
