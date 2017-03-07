@@ -29,6 +29,6 @@
   },
   "dependencies": {
     "aliyun-sdk": "^1.9.21",
-    "batch-executor": "^1.0.0"
+    "batch-executor": "1.0.x"
   }
 }
